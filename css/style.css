@@ -1,0 +1,225 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+    background: #121214;
+    font-family: 'Roboto', sans-serif;
+    color: #e1e1e6;
+}
+
+:root{
+    --color-green:rgb(17, 255, 37);
+    --color-purple:#8257e5;
+}
+
+.active{
+    border-top: 1px solid var(--color-purple);
+    border-left: 1px solid var(--color-purple);
+    border-right: 1px solid var(--color-purple);
+}
+
+.disabled{
+    filter: blur(2px);
+}
+
+.active-bar{
+    border-left: 1px solid var(--color-purple);
+    border-right: 1px solid var(--color-purple);
+    border-bottom: 1px solid var(--color-purple);
+}
+
+.hide{
+    display: none;
+}
+
+h1{
+    font-size: 3.5em;
+}
+
+#principal-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--color-green);
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+}
+
+#box-score{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 80px;
+    font-size: 1.9em;
+}
+
+#time{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: space-around;
+}
+
+#pontos{
+    display: flex;
+    align-items: center;
+    width: 90px;
+    justify-content: space-around;
+}
+
+#area-click-box{
+    width: 98%;
+    background-color: #1d1d1d;
+    height: 85%;
+    border-radius: 10px 10px 0 0px;
+    transition: all 400ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 400ms;
+}
+
+#area-click{
+    border: 1px solid #181818;
+    width: 99.2%;
+    height: 98%;
+    border-radius: 10px;
+    background: url('../img/bg-click.png') center #181818;
+    transition: filter 400ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    overflow: auto;
+    overflow-x:hidden;
+}
+
+#countdown-box{
+    position: absolute;
+    z-index: 5000;
+    top: 53%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#text-count{
+    color: #0a0a0aa1;
+    text-transform: uppercase;
+    font-size: 50px;
+    transition: all 400ms;
+}
+
+#comecar{
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--color-purple);
+    color: rgb(226, 226, 226);
+    font-size: 1.3em;
+    font-weight: 700;
+    border: 0;
+    border-radius: 10px;
+    transition: all 400ms;
+}
+
+#comecar:hover{
+    filter: brightness(0.7);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.397);
+}
+
+#progress-box{
+    background-color: #1d1d1d;
+    border-radius:0 0 10px 10px;
+    width: 98%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+#progress{
+    width: 97%;
+    height: 11px;
+    background-color: #121214;
+    border-radius: 5px;
+}
+
+#progress-bar{
+    background-color: var(--color-green);
+    width: 0%;
+    height: 100%;
+    border-radius: 5px;
+    transition:width 1s;
+    outline: none;
+}
+
+#pontos-final-box{
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #131313;
+    position: absolute;
+    z-index: 5001;
+    top: -20%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.192);
+    transition: top 400ms;
+}
+
+#points-box{
+    width: 100%;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    text-align: center;
+}
+
+.show-final-results{
+    color: var(--color-purple);
+}
+
+#bt-close{
+    margin: 20px 0;
+}
+
+#button-close{
+    width: 160px;
+    height: 40px;
+    cursor: pointer;
+    background-color: var(--color-purple);
+    color: #e1e1e6;
+    font-weight: 700;
+    border: 0;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: all 400ms;
+}
+
+#button-close:hover{
+    filter: brightness(0.7);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.397);
+}
