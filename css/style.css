@@ -67,6 +67,7 @@ main{
     width: 400px;
     height: 80px;
     font-size: 1.9em;
+     user-select:none;
 }
 
 #time{
@@ -109,6 +110,7 @@ main{
     outline: none;
     overflow: auto;
     overflow-x:hidden;
+    user-select:none;
 }
 
 #countdown-box{
@@ -137,6 +139,7 @@ main{
     border: 0;
     border-radius: 10px;
     transition: all 400ms;
+    user-select:none;
 }
 
 #comecar:hover{
